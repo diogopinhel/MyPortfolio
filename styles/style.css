@@ -3,6 +3,62 @@
 
 * {
     margin: 0;
-    font-family:'Poppins', 'sans-serif';
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
 
+    font-family:'Poppins', 'sans-serif';
+    
+
+}
+
+:root{ /*Usado pra selecionar o elemento raiz do documento */
+    --bg-color: #081b29;/* Define a cor de fundo principal.*/
+    --second-bg-color: #112e42;/*Define a segunda cor de fundo */
+    --text-color: #ededed;/* Define a cor do texto.*/
+    --main-color: #00abf0;/* Define cor principal */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden ;
+}
+
+body{
+    background: var(--bg-color) ;
+    color : var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 32px 9%;
+    background: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{ /*METER LOGO MSM */
+    font-size: 40px;
+    color: var(--text-color);
+    font-weight: 600;
+
+}
+
+.navbar a{ /*vER MEDIDAS DPS */
+    font-size: 24px;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 56px;
+}
+
+.navbar a:hover { /*Ao passar o cursor por cima de cada elemento da navbar estes ficam azuis */
+    color: var(--main-color);
 }
